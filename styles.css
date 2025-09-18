@@ -1,0 +1,310 @@
+.social-icons {
+  position: fixed;   /* top-right corner, stays on scroll */
+  top: 1rem;
+  left: 1rem;
+  display: flex;
+  flex-direction: column; /* stack vertically */
+  gap: 1rem;
+  z-index: 1000;
+}
+
+.social-icons a {
+  color: #00f7ff;    /* neon cyan default */
+  font-size: 1.8rem;
+  text-decoration: none;
+  text-shadow: 0 0 6px #00f7ff, 0 0 12px #00f7ff;
+  transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #ff00ff;          /* neon magenta on hover */
+  text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff;
+  transform: scale(1.3);   /* subtle grow effect */
+}
+
+.project-btn {
+  display: inline-block;
+  background: transparent;
+  border: 2px solid #ff00ff;       /* neon magenta */
+  color: #ff00ff;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  text-shadow: 0 0 6px #ff00ff;
+  box-shadow: 0 0 12px rgba(255,0,255,0.6);
+  transition: all 0.3s ease;
+}
+
+.project-btn:hover {
+  background: #ff00ff;
+  color: #1a1a1a;
+  text-shadow: none;
+  transform: scale(1.1);
+  box-shadow: 0 0 20px #ff00ff, 0 0 30px #ff00ff;
+}
+
+
+body {
+  background: linear-gradient(270deg, #1a1a1a, #3333ff, #1a1a1a);
+  background-size: 600% 600%;
+  animation: gradientShift 15s ease infinite;
+}
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+body {
+  background: linear-gradient(to bottom right, #1a1a1a, #3333ff);
+  color: white;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+#intro {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+
+.skills-section {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.skills-section h2 {
+  color: #ff00ff; /* neon magenta */
+  text-shadow: 0 0 8px #ff00ff, 0 0 16px #ff00ff;
+  margin-bottom: 1.5rem;
+}
+
+.skills-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* wraps nicely if there are too many */
+  gap: 1rem;
+}
+
+.skills-buttons button {
+  background: transparent;
+  border: 2px solid #00f7ff;
+  color: #00f7ff;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: default; /* they’re not clickable, just styled */
+  text-shadow: 0 0 6px #00f7ff;
+  box-shadow: 0 0 12px rgba(0, 247, 255, 0.6);
+  transition: all 0.3s ease;
+}
+
+.skills-buttons button:hover {
+  background: #00f7ff;
+  color: #1a1a1a;
+  text-shadow: none;
+  transform: scale(1.1);
+  box-shadow: 0 0 20px #00f7ff, 0 0 30px #00f7ff;
+}
+
+  body {    
+    color: white;
+    margin-left: 60px;
+  }
+  /*Making */
+
+  h1, h2 {
+    color: white;
+  }
+  
+
+  
+  .about-text {
+    color: white;
+      
+      /* centers horizontally and adds top spacing */
+    text-align: center; 
+    line-height: 1.6; 
+     max-width: 900px
+    
+
+  }
+  
+  .experience-section h2,
+  .certifications-section h2,
+  .mycv-section h2,
+  .about-text h2,
+  .projects-section h2,
+  .gallary-section h2 {
+    color: #ff00ff; /* neon magenta */
+  text-shadow: 0 0 8px #ff00ff, 0 0 16px #ff00ff;
+  }
+  
+
+  .cert-btn {
+  display: inline-block;
+  background: transparent;
+  border: 2px solid #00f7ff;   /* neon cyan */
+  color: #00f7ff;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  text-shadow: 0 0 6px #00f7ff;
+  box-shadow: 0 0 12px rgba(0,247,255,0.6);
+  transition: all 0.3s ease;
+}
+
+.cert-btn:hover {
+  background: #00f7ff;
+  color: #1a1a1a;
+  text-shadow: none;
+  transform: scale(1.1);
+  box-shadow: 0 0 20px #00f7ff, 0 0 30px #00f7ff;
+}
+
+
+.h1 {
+    color:aqua;
+    text-align: center;
+    font-size: 36px;
+}
+.about-content {
+    display: flex;
+      align-items: flex-start;
+  gap: 2rem;
+  max-width: 1000px;
+  font-style: italic;
+}
+.profile-image {
+    max-width: 150px;
+
+  border-radius: 8px;   
+}
+
+.job-meta {
+  display: block;       /*experience titles*/
+  margin: 0.5rem 0;
+  color: #00f7ff;;       /* <-- replace this with your chosen colour */
+  font-style: italic;   /* optional */
+}
+.twobytwolineup {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns of equal width */
+  gap: 2rem; /* space between sections */
+  max-width: 1200px; /* optional, keeps it centered */
+  margin: 0 auto; /* center the grid */
+  padding: 2rem 1rem;
+
+}
+
+.about-text {
+    flex: 1;
+      line-height: 1.6; 
+}
+
+.experience-section,
+.certifications-section,
+.mycv-section ,
+.projects-section { border: 4px solid #00f7ff;
+  
+  padding: 1.5rem;           /* space between text and border */
+  border-radius: 12px;       /* soft rounded corners */
+  background: rgba(0,0,0,0.2); /* optional subtle dark overlay */
+  box-shadow: 0 0 15px rgba(0,255,255,0.3); /* neon glow effect */
+  color: white; }
+
+.about-text p {
+  font-size: 1rem;
+  color: white;
+}
+
+.header {
+  text-align: center;
+  font-size: xx-large;
+    color: #00f7ff; /* neon cyan */
+  text-shadow: 0 0 10px #00f7ff, 0 0 20px #00f7ff;
+
+}
+
+/* CONTACT BUTTON */
+#contactBtn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #ff00ff; /* neon magenta */
+  color: white;
+  border: 2px solid #ff00ff;
+  border-radius: 8px;
+  padding: 0.6rem 1rem;
+  cursor: pointer;
+  font-weight: bold;
+  text-shadow: 0 0 6px #ff00ff;
+  z-index: 1000;
+  transition: 0.3s;
+}
+
+#contactBtn:hover {
+  background-color: #00f7ff;
+  border-color: #00f7ff;
+  text-shadow: 0 0 8px #00f7ff;
+}
+
+.cv-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.cv-box a {
+  font-size: 5rem;               /* big icon */
+  color: #00f7ff;                /* neon cyan */
+  text-shadow: 0 0 10px #00f7ff, 0 0 10px #00f7ff;
+  transition: all 0.3s ease;
+}
+
+.cv-box a:hover {
+  color: #ff00ff;                /* neon magenta hover */
+  text-shadow: 0 0 15px #ff00ff, 0 0 30px #ff00ff;
+  transform: scale(1.2);         /* grow on hover */
+}
+
+/* MODAL BACKGROUND */
+.modal {
+  display: none; /* hidden by default */
+  position: fixed;
+  z-index: 1001;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background: rgba(0,0,0,0.85);
+}
+
+/* MODAL CONTENT BOX */
+.modal-content {
+  background: #1a1a1a;
+  margin: 10% auto;
+  padding: 2rem;
+  border: 4px solid #ff00ff;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 0 20px #ff00ff;
+  color: white;
+}
+
+/* CLOSE BUTTON */
+.close {
+  color: #ff00ff;
+  float: right;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+
+
+
+
